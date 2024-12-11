@@ -27,14 +27,16 @@ function App() {
     <div className="h-screen w-full flex flex-wrap content-between">
       <div className="w-full block">
         <Header />
-        Hellooo
-        <main>
-          Todo : <Outlet />
+        <main className="w-full bg-neutral-400">
+          <Outlet />
         </main>
         <Footer />
       </div>
     </div>
-  ) : <div>Loading...</div>
+  ) :
+    <div className="w-full h-screen flex items-center justify-center">
+      Loading...
+    </div>
 }
 
 export default App;
