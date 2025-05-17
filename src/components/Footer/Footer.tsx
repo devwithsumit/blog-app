@@ -5,7 +5,7 @@ import Logo from "../Logo.tsx";
 
 export default function Footer() {
   return (
-    <section className="relative overflow-hidden py-10 bg-neutral-300 border border-t-2 border-t-black">
+    <section className="relative overflow-hidden py-10 bg-neutral-200 border border-t border-t-black/30">
       <div className="relative z-10 mx-auto max-w-7xl px-4">
         <div className="-m-6 flex flex-wrap">
           <div className="w-full p-6 md:w-1/2 lg:w-5/12">

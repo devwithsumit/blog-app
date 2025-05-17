@@ -6,7 +6,7 @@ import Logo from "./Logo";
 import Button from "./Header/Button";
 import Login from "./Login";
 import Signup from "./Signup";
-import PostCardPreview from "./PostCard";
+import PostCardPreview from "./post/PostCard";
 import PostForm from "./post/PostForm";
 import AuthLayout from "./AuthLayout";
 /* export all component together so that there

@@ -20,11 +20,12 @@ function Home() {
     }, [])
 
     return posts.length > 0 ? (
-        <div className="w-full py-8">
+        <div className="w-full py-8 min-h-[50vh]">
             <Container>
-                <div className="flex flex-wrap">
+                <h1 className="font-semibold text-xl sm:text-2xl my-5">ALL POSTS</h1>
+                <div className="flex flex-wrap gap-5">
                     {posts.map((post: any) => (
-                        <div key={post.$id} className="p-2 w-1/4">
+                        <div key={post.$id} className="w-1/4">
                             <PostCard {...post} />
                         </div>
                     ))}

@@ -1,6 +1,6 @@
 // import React from 'react'
 import { Link } from "react-router-dom"
-import fileService from "../appwrite/fileService"
+import fileService from "../../appwrite/fileService"
 // import { useEffect } from "react";
 
 
@@ -20,12 +20,12 @@ function PostCard({
     //   const image = fileService.getFilePreview(featuredImage)
     //   if(image) console.log(image);
     // }, [])
-    
+
     return (
         <Link to={`/post/${$id}`}>
-            <div className="w-full bg-gray-100 rounded-xl p-4">
+            <div className="shadow-md w-full bg-gray-100 rounded-xl p-4">
                 <div className="w-full justify-center mb-4">
-                    <img src={fileService.getFilePreview(featuredImage)} alt={title}
+                    <img src={fileService.getFilePreview(featuredImage) || 'https://images.unsplash.com/photo-1542435503-956c469947f6?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'} alt={title}
                         className="rounded-xl" />
                 </div>
                 <h2 className="text-xl font-bold">

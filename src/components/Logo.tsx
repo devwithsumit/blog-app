@@ -10,7 +10,7 @@ function Logo({ width = "100px" }: Logo) {
   return (
     <Link to={"/"}>
       <div className={`w-[100px] w-[${width}]`}>
-        <img className="object-cover h-full w-full" src="/logo-light.png" alt="" />
+        <img className="object-cover h-full w-full" src="/logo.png" alt="" />
       </div>
     </Link>
   )

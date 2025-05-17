@@ -43,7 +43,7 @@ function Header() {
   ]
 
   return (
-    <header className="py-3 shadow bg-neutral-300">
+    <header className="py-3 shadow bg-neutral-200">
       <Container>
         <nav className="flex">
           <div className="mr-4 cursor-pointer">
@@ -54,7 +54,7 @@ function Header() {
             {/* using map for each navitems and placing them */}
             {navItems.map((item) =>
               item.active && (
-                <button key={item.name} onClick={() => navigate(item.slug)} className={`inline-block px-6 py-2 duration-100 hover:bg-blue-100 rounded-full`}>
+                <button key={item.name} onClick={() => navigate(item.slug)} className={`inline-block mx-2 px-6 py-2 duration-100 backdrop-blur-sm backdrop-opacity-65 border shadow hover:bg-gray-100 rounded-full`}>
                   {item.name}
                 </button>
               )
